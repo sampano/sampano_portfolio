@@ -1,0 +1,19 @@
+.portfolio-resume {
+  p {
+    span {
+      font-size: 2rem;
+    }
+  }
+  &__container {
+    display: flex;
+    padding: 80px 20px;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 700px;
+    height: 200px;
+    border: 1px solid#ddd;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-shadow: 0 1px 4px 0px rgb(0 0 0 / 20%);
+  }
+}

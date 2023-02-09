@@ -1,0 +1,16 @@
+.portfolio-footer {
+  background-color: #fafafa;
+  border-bottom: #dddddd solid 1px;
+  margin: 0;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}

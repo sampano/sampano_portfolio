@@ -1,0 +1,136 @@
+.portfolio-portfolio {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-size: 4.5rem;
+    }
+    p {
+      span {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__text-container {
+    width: 50%;
+  }
+
+  &__image-container {
+    width: 50%;
+    position: relative;
+    img {
+      width: 80%;
+      border-radius: 5px;
+    }
+    .portfolio-img-right {
+      width: 80%;
+      padding-top: 30px;
+      position: relative;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 5px 5px 0 5px;
+      box-shadow: 0 1px 4px 0px rgb(0 0 0 / 20%);
+      animation: image-load-2 500ms ease-in-out;
+      img {
+        width: 100%;
+      }
+    }
+    .portfolio-img-left {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 5px 5px 0 5px;
+      position: absolute;
+      top: -10%;
+      left: 0;
+      width: 40%;
+      box-shadow: 0 1px 4px 0px rgb(0 0 0 / 20%);
+      transform: translateX(117%);
+      animation: image-load 600ms ease-in-out;
+      img {
+        width: 100%;
+        box-shadow: none;
+      }
+    }
+  }
+  &__project-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__project {
+    position: relative;
+    width: 30%;
+    padding-bottom: 30px;
+    img {
+      width: 100%;
+      border-radius: 5px;
+      box-shadow: 0 1px 4px 0px rgb(0 0 0 / 20%);
+      // border: 1px solid red;
+    }
+
+    .project-text {
+      // border: 1px solid blue;
+      background-color: #333;
+      opacity: 0.8;
+      bottom: 0;
+      position: absolute;
+      bottom: 0;
+      height: 75px;
+      width: 100%;
+      visibility: hidden;
+      padding: 10px;
+      border-radius: 0 0 5px 5px;
+      p {
+        font-weight: 500;
+        color: #fff;
+        font: 1rem;
+        span {
+          font-size: 0.875rem;
+          margin: 0;
+          font-weight: 200;
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  &__project:hover .project-text {
+    visibility: visible;
+    animation: project-info 200ms ease-in-out;
+    transform: translateY(-50%);
+  }
+  @keyframes image-load {
+    0% {
+      transform: translateX(-101%);
+    }
+
+    100% {
+      transform: translateX(117%);
+    }
+  }
+
+  @keyframes image-load-2 {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes project-info {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
+}

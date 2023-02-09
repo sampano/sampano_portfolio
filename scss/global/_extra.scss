@@ -1,0 +1,33 @@
+.gradient-white {
+  background-color: #fff;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  bottom: -4%;
+  left: 47.1%;
+  border-bottom: 2px #dddddd solid;
+  a {
+    i {
+      color: gray;
+      opacity: 0.8;
+      transform: translateY(100%);
+      font-size: 2.5rem;
+    }
+  }
+  a:hover {
+    i {
+      animation: arrow-down 500ms ease;
+    }
+  }
+
+  @keyframes arrow-down {
+    0% {
+      transform: translateY(70%);
+    }
+
+    100% {
+      transform: translateY(100%);
+    }
+  }
+}
