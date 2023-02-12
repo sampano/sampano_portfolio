@@ -18,12 +18,300 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/dist/styles.css" />
-    <script src="js/script.js" defer></script>
+    <script src="/js/script.js" defer></script>
     <title>Sam Portfolio</title>
   </head>
   <body>
     <header class="portfolio-header">
-      <nav class="portfolio-header_nav"></nav>
+      <nav class="portfolio-header__nav border-bottom">
+        <div class="container">
+          <div>
+            <ul class="nav-items">
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="mailto:samuelpano@gmail.com">Contact</a></li>
+            </ul>
+          </div>
+          <div class="burger-menu">
+            <i class="fa-solid fa-burger burger-open"></i>
+          </div>
+          <!-- <i class="fa-solid fa-x"></i> -->
+        </div>
+      </nav>
+      <section class="portfolio-header__banner border-bottom p-t-80">
+        <div class="container">
+          <h2 class="hidden">Sam Pano</h2>
+          <h1 class="hidden">Front-end Developer</h1>
+          <a href="mailto:samuelpano@gmail.com" class="button-primary"
+            >Let's Talk</a
+          >
+          <div class="portfolio-header__img-container p-t-40 p-b-80">
+            <img src="/assets/img_01.png" alt="" />
+          </div>
+          <div class="gradient-white">
+            <a href=""><i class="fa-sharp fa-solid fa-angles-down"></i></a>
+          </div>
+        </div>
+      </section>
     </header>
+    <main>
+      <section class="portfolio-about p-t-100 p-b-100 border-bottom" id="about">
+        <div class="container portfolio-about__container">
+          <div class="portfolio-about__text-container">
+            <h2 class="hidden">about.</h2>
+            <p class="hidden">
+              <span>I'm a front-end developer based in PH.</span>
+            </p>
+            <p class="hidden">
+              I also have 8 years of IT Infrastructure experience. Combining my
+              tech skills and passion for creating great websites, I bring value
+              to any team. Excited to showcase my abilities in front-end
+              development.
+            </p>
+          </div>
+          <div class="portfolio-about__img-container">
+            <img src="/assets/img_02.png" alt="" class="hidden2" />
+          </div>
+        </div>
+      </section>
+      <section
+        class="portfolio-portfolio p-b-100 p-t-100 border-bottom"
+        id="portfolio"
+      >
+        <div class="container">
+          <div class="portfolio-portfolio__container p-b-80">
+            <div class="portfolio-portfolio__img-container"></div>
+            <div class="portfolio-portfolio__text-container">
+              <h2 class="hidden2">portfolio.</h2>
+              <p class="hidden2">
+                <span>Showcasing skills, projects, and unique solutions.</span>
+              </p>
+              <p class="hidden2">
+                Discover my portfolio to see the creative and technical
+                solutions I bring to every project.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <p class="projects-headline">some of my latest work</p>
+          <div class="portfolio-portfolio__project-container p-t-40">
+            <div class="portfolio-portfolio__project hidden">
+              <img src="/assets/portfolio-img-05.png" alt="" />
+              <a href="https://drakemedox.co.uk/" target="_blank">
+                <div class="project-text">
+                  <p>Drake Medox</p>
+                  <p>Umbraco, HTML, CSS and Javascript</p>
+                </div>
+              </a>
+            </div>
+            <div class="portfolio-portfolio__project hidden">
+              <img src="/assets/portfolio-img-06.png" alt="" />
+              <a href="https://drakemedox.co.uk/" target="_blank">
+                <div class="project-text">
+                  <p>Drake Medox</p>
+                  <p>Umbraco, HTML, CSS and Javascript</p>
+                </div>
+              </a>
+            </div>
+            <div class="portfolio-portfolio__project hidden">
+              <img src="/assets/portfolio-img-04.png" alt="" />
+              <a href="https://drakemedox.co.uk/" target="_blank">
+                <div class="project-text">
+                  <p>Travel Buddy</p>
+                  <p>Javascript, HTML, CSS and Javascript</p>
+                </div>
+              </a>
+            </div>
+            <div class="portfolio-portfolio__project hidden">
+              <img src="/assets/portfolio-img-03.jpg" alt="" />
+              <a href="https://drakemedox.co.uk/" target="_blank">
+                <div class="project-text">
+                  <p>Drake Medox</p>
+                  <p>Umbraco, HTML, CSS and Javascript</p>
+                </div>
+              </a>
+            </div>
+            <div class="portfolio-portfolio__project hidden">
+              <img src="/assets/portfolio-img-02.jpg" alt="" />
+              <a href="https://drakemedox.co.uk/" target="_blank">
+                <div class="project-text">
+                  <p>Drake Medox</p>
+                  <p>Umbraco, HTML, CSS and Javascript</p>
+                </div>
+              </a>
+            </div>
+            <div class="portfolio-portfolio__project hidden">
+              <img src="/assets/portfolio-img-01.jpg" alt="" />
+              <a href="https://drakemedox.co.uk/" target="_blank">
+                <div class="project-text">
+                  <p>Drake Medox</p>
+                  <p>Umbraco, HTML, CSS and Javascript</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="portfolio-skills p-t-100 p-b-100 border-bottom"
+        id="skills"
+      >
+        <div class="container">
+          <div class="portfolio-skills__container">
+            <div class="portfolio-skills__text-container">
+              <h2 class="hidden">skills.</h2>
+              <p class="hidden">
+                <span>Combining technical expertise and creative vision.</span>
+              </p>
+              <p class="hidden">
+                My diverse skillset and attention to detail allow me to create
+                beautiful and functional websites.
+              </p>
+            </div>
+            <div class="portfolio-skills__graph-container">
+              <ul class="bag-chart hidden2">
+                <li class="axis">
+                  <div>Jedi</div>
+                  <div>Ninja</div>
+                  <div>Geek</div>
+                  <div>Newbie</div>
+                </li>
+
+                <li class="categories dark-bg score-90">
+                  <h3>90<span>%</span></h3>
+                  <div class="category-text">Front-end</div>
+                </li>
+                <li class="categories yellow-bg score-90">
+                  <h3>90<span>%</span></h3>
+                  <div class="category-text">Website Builder CMS</div>
+                </li>
+                <li class="categories dark-bg score-100">
+                  <h3>99<span>%</span></h3>
+                  <div class="category-text">Googling</div>
+                </li>
+                <div class="axis-line"></div>
+                <div class="axis-line axis-line-2"></div>
+                <div class="axis-line axis-line-3"></div>
+                <div class="axis-line axis-line-4"></div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio-experience p-t-80 p-b-80" id="experience">
+        <div class="container">
+          <h2 class="hidden">experience.</h2>
+          <div class="portfolio-experience__container">
+            <ul class="hidden">
+              <li class="header-list active">Drake Interntational PH</li>
+              <li class="header-list">QBE GSSC Ltd</li>
+              <li class="header-list">24/7 Inc</li>
+            </ul>
+
+            <div class="portfolio-experience__content-container hidden2">
+              <div class="portfolio-experience__content active">
+                <h3>
+                  Front-end Developer <br /><span
+                    >November, 2022 - Present</span
+                  >
+                </h3>
+                <p>Optimizing the user experience.</p>
+                <p>
+                  Using HTML, JavaScript, CSS and Umbrao to bring concepts to
+                  life.
+                </p>
+                <p>Developing and maintaining the user interface.</p>
+                <p>Implementing design on mobile websites.</p>
+                <p>Fixing bugs and testing for usability.</p>
+              </div>
+              <div class="portfolio-experience__content">
+                <h3>
+                  IT Infrastructure Team Leader <br /><span
+                    >July, 2018 - Jan, 2020</span
+                  >
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  fugit excepturi assumenda, voluptate non repellendus
+                  distinctio iure nam recusandae commodi sed facilis. Omnis
+                  inventore quasi ipsa nihil, illum pariatur in.
+                </p>
+                <h3>
+                  IT Infrastructure<br /><span>July, 2014 - July, 2018</span>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  fugit excepturi assumenda, voluptate non repellendus
+                  distinctio iure nam recusandae commodi sed facilis. Omnis
+                  inventore quasi ipsa nihil, illum pariatur in.
+                </p>
+              </div>
+              <div class="portfolio-experience__content">
+                <h3>
+                  Network Services Engineer<br /><span
+                    >Jan, 2013 - July, 2014</span
+                  >
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  fugit excepturi assumenda, voluptate non repellendus
+                  distinctio iure nam recusandae commodi sed facilis. Omnis
+                  inventore quasi ipsa nihil, illum pariatur in.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  fugit excepturi assumenda, voluptate non repellendus
+                  distinctio iure nam recusandae commodi sed facilis. Omnis
+                  inventore quasi ipsa nihil, illum pariatur in.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio-cta">
+        <div class="container">
+          <div class="portfolio-cta__container hidden">
+            <p>Take action, let's create something amazing together.</p>
+            <a href="mailto:samuelpano@gmail.com" class="button-primary"
+              >Email me now!</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="portfolio-footer">
+      <div class="container">
+        <div class="portfolio-footer__container">
+          <div>
+            <p>© 2023 Sam Pano</p>
+          </div>
+          <ul class="portfolio-footer__socials">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/samuel-pano-35545ab9/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/sampano" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=100086041495411"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

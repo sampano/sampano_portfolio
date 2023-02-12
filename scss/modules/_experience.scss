@@ -8,7 +8,7 @@
     }
   }
 
-  &__header-container {
+  &__container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -32,6 +32,12 @@
   &__content-container {
     position: relative;
     width: 80%;
+    h3 {
+      span {
+        font-size: 0.8125rem;
+        font-weight: 400;
+      }
+    }
   }
 
   &__content {
@@ -47,11 +53,38 @@
 
   @keyframes content-text {
     0% {
-      transform: translateX(30%);
+      transform: translateX(10%);
     }
 
     100% {
       transform: translateX(0%);
+    }
+  }
+}
+@media (max-width: 1366px) {
+  .portfolio-experience {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-experience {
+    h2 {
+      text-align: center;
+      font-size: 3.6rem;
+    }
+    &__container {
+      width: 100%;
+      flex-wrap: wrap;
+      ul {
+        width: 100%;
+      }
+    }
+
+    &__content-container {
+      width: 100%;
+      height: 50vh;
+      position: static;
     }
   }
 }

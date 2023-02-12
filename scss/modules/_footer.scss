@@ -3,14 +3,28 @@
   border-bottom: #dddddd solid 1px;
   margin: 0;
   &__container {
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    p {
+      margin: 0;
+    }
   }
 
   &__socials {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
+    color: #333;
+    margin: 0;
+
+    li {
+      a {
+        i {
+          font-size: 1.5rem;
+        }
+      }
+    }
   }
 }

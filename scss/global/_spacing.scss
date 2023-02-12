@@ -1,4 +1,22 @@
-$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100);
+$spaceamounts: (
+  5,
+  10,
+  15,
+  20,
+  25,
+  30,
+  35,
+  40,
+  45,
+  50,
+  60,
+  65,
+  70,
+  75,
+  80,
+  85,
+  100
+);
 $sides: (top, bottom, left, right); // Leave this variable alone
 
 @each $space in $spaceamounts {

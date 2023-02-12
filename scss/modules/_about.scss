@@ -3,7 +3,8 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-end;
+
     h2 {
       font-size: 4.5rem;
     }
@@ -13,17 +14,38 @@
       }
     }
     img {
-      width: 300px;
-      height: 300px;
+      width: 350px;
+      height: 350px;
       border-radius: 50%;
     }
   }
 
   &__text-container {
     width: 50%;
+    text-align: end;
   }
 
   &__img-container {
     width: 50%;
+  }
+}
+@media (max-width: 1366px) {
+  .portfolio-about {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-about {
+    &__container {
+      flex-wrap: wrap;
+    }
+    &__text-container {
+      width: 100%;
+      text-align: center;
+    }
+    &__img-container {
+      width: 100%;
+    }
   }
 }

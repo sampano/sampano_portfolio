@@ -17,10 +17,11 @@
   }
 
   &__text-container {
-    width: 60%;
+    width: 50%;
   }
 
   &__graph-container {
+    width: 50%;
     .bag-chart {
       position: relative;
       display: flex;
@@ -64,6 +65,7 @@
       h3 {
         font-weight: 700;
         font-size: 4rem;
+        text-align: center;
         span {
           font-weight: 400;
           font-size: 0.875rem;
@@ -78,30 +80,34 @@
       h3 {
         position: absolute;
         bottom: 25px;
-        padding-left: 35px;
+        padding-left: 25px;
         animation: graph-bar-text 300ms ease-in-out;
       }
-      p {
+      div.category-text {
         position: absolute;
-        bottom: 3%;
-        text-align: center;
-        font-size: 0.875rem;
+        bottom: 2%;
       }
     }
-    li.dark-bg {
-      background-color: #333;
+
+    li.categories:nth-child(2) {
+      div.category-text {
+        left: 24%;
+        bottom: 5%;
+      }
     }
-    li.yellow-bg {
-      background-color: #e9c51a;
+    li.categories:nth-child(4) {
+      div.category-text {
+        left: 24%;
+        bottom: 5%;
+      }
     }
-    li.score-90 {
-      height: 400px;
-      animation: graph-bar 300ms ease-in-out;
-    }
-    li.score-100 {
-      height: 455px;
-      animation: graph-bar-2 300ms ease-in-out;
-    }
+  }
+
+  li.dark-bg {
+    background-color: #333;
+  }
+  li.yellow-bg {
+    background-color: #e9c51a;
   }
 
   @keyframes graph-bar {
@@ -128,6 +134,64 @@
     }
     100% {
       bottom: 25px;
+    }
+  }
+}
+@media (max-width: 1366px) {
+  .portfolio-skills {
+    padding: 20px 0;
+    &__graph-container {
+      .bag-chart {
+        .axis-line {
+          width: 450px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-skills {
+    &__container {
+      flex-wrap: wrap;
+    }
+    &__text-container {
+      width: 100%;
+      text-align: center;
+    }
+    &__graph-container {
+      width: 100%;
+      .bag-chart {
+        padding: 0;
+        .axis-line {
+          width: 300px;
+        }
+
+        li {
+          h3 {
+            font-size: 3rem;
+            text-align: center;
+            padding: 5px;
+            span {
+              font-weight: 400;
+              font-size: 0.875rem;
+            }
+          }
+          div.category-text {
+            font-size: 0.875rem;
+          }
+        }
+        li.categories:nth-child(2) {
+          div.category-text {
+            left: 5px !important;
+          }
+        }
+        li.categories:nth-child(4) {
+          div.category-text {
+            left: 9px !important;
+          }
+        }
+      }
     }
   }
 }
